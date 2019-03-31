@@ -2,6 +2,7 @@
 *.ovpn
 *.crt
 mullvad_userpass.txt
+downloaded_configs/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
