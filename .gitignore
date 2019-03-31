@@ -1,3 +1,8 @@
+# OpenVPN Files
+*.ovpn
+*.crt
+mullvad_userpass.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
