@@ -34,7 +34,10 @@ def get_config(driver, platform, region, port, use_ip_addresses):
         captcha_answer_input.send_keys(str(captcha_answer))
         current_url = driver.current_url
         captcha_answer_input.send_keys(webdriver.common.keys.Keys.RETURN)
-        webdriver.support.ui.WebDriverWait(driver, 15).until(EC.url_changes(current_url))
+        try:
+            webdriver.support.ui.WebDriverWait(driver, 15).until(EC.url_changes(current_url))
+        except:
+            continue # Captcha was WRONG
         if driver.current_url == "https://mullvad.net/en/account/welcome/":
             captcha_solved = True
         else:
