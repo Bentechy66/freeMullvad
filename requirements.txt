@@ -6,3 +6,4 @@ matplotlib
 scikit-image
 scipy
 bs4
+requests
