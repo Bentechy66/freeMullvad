@@ -1,4 +1,4 @@
 # FreeMullvad
 ## By BenTechy66
 
-#### Please don't share around too much. Thanks!
+# This is now broken. I'm making it public and archiving the repo.
